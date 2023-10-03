@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #3f3636;
+    margin: 0;
+    padding: 0;
+}
+
+.connect4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(7, 70px);
+    gap: 5px;
+    background-color: #3498db;
+    border: 10px solid navy;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.tile {
+    height: 70px;
+    width: 70px;
+    background-color: rgb(241, 239, 239);
+    border-radius: 50%;
+    border: 5px solid navy;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tile:hover {
+    background-color: #0e0202;
+}
+
+.red-piece {
+    background-color: rgb(214, 18, 18);
+}
+
+.yellow-piece {
+    background-color: yellow;
+}
+
+.winner {
+    font-size: 24px;
+    margin-top: 20px;
+}
